@@ -4,8 +4,8 @@ zip \
 unzip
 WORKDIR /var/www/html/
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page288/frica.zip
-RUN unzip *.zip
-#RUN cp -rvf fri* .
-#RUN rm -rf abc abc.zip
+RUN unzip frica.zip
+RUN cp -rvf frica/* .
+RUN rm -rf frica frica.zip
 CMD ["/usr/sbin/httpd", "-D" , "FOREGROUND"]
 EXPOSE 80
