@@ -2,7 +2,7 @@ FROM centos:latest
 RUN yum install -y httpd \
 zip \
 unzip
-ADD abc.zip
+ADD abcx.zip
 WORKDIR /var/www/html/
 RUN unzip abc.zip
 RUN cp -rvf abc/* .
