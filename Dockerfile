@@ -8,4 +8,4 @@ RUN unzip frica.zip
 RUN cp -rvf frica/* .
 RUN rm -rf frica frica.zip
 CMD ["/usr/sbin/httpd", "-D" , "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 22
