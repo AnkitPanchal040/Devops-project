@@ -2,7 +2,6 @@ kind: Service
 apiVersion: v1
 metadata: 
   name: my-project
-  labels: my-project
 spec:
   ports:
     - port: 8080
