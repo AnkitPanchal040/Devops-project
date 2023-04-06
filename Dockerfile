@@ -4,7 +4,7 @@ RUN yum install -y httpd \
  unzip
 #ADD https://www.free-css.com/assets/files/free-css-templates/download/page288/frica.zip /var/www/html/
 #ADD https://www.free-css.com/assets/files/free-css-templates/download/page290/restoran.zip /var/www/html/
-copy html .
+copy html /var/www/html/
 WORKDIR /var/www/html/
 #RUN unzip restoran.zip
 RUN cp -rvf html/* .
