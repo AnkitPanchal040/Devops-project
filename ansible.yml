@@ -9,4 +9,5 @@
       command: kubectl apply -f /home/ubuntu/Deployment.yml
     - name: create new service
       command: kubectl apply -f /home/ubuntu/Service.yml
+    - command: sleep 15
     - command: kubectl port-forward --address 0.0.0.0 svc/my-project 80:8080
