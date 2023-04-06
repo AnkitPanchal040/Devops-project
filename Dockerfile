@@ -6,7 +6,7 @@ RUN yum install -y httpd \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page290/restoran.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip restoran.zip
-RUN cp -rvf html/* .
-RUN rm -rf html restoran.zip
+RUN cp -rvf bootstrap-restaurant-template/* .
+RUN rm -rf bootstrap-restaurant-template restoran.zip
 CMD ["/usr/sbin/httpd", "-D" , "FOREGROUND"]
 EXPOSE 80 8080 22
