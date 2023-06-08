@@ -7,7 +7,7 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page292/ho
 #COPY html /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip honey.zip
-RUN cp -rvf html/* .
-RUN rm -rf html honey.zip
+RUN cp -rvf honey-html/* .
+RUN rm -rf honey-html honey.zip
 CMD ["/usr/sbin/httpd", "-D" , "FOREGROUND"]
 EXPOSE 80 8080 22
