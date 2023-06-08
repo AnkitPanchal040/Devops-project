@@ -3,11 +3,11 @@ RUN yum install -y httpd \
  zip \
  unzip
 #ADD https://www.free-css.com/assets/files/free-css-templates/download/page288/frica.zip /var/www/html/
-#ADD https://www.free-css.com/assets/files/free-css-templates/download/page292/honey.zi /var/www/html/
+#ADD https://www.free-css.com/assets/files/free-css-templates/download/page290/restoran.zip /var/www/html/
 COPY honey /var/www/html/
 WORKDIR /var/www/html/
-#RUN unzip Honey Free Website Template - Free-CSS.com.zip
-RUN cp -rvf honey/* .
-#RUN rm -rf honey-html Honey Free Website Template - Free-CSS.comoney.zip
+#RUN unzip frica.zip
+#RUN cp -rvf html/* .
+#RUN rm -rf html frica.zip
 CMD ["/usr/sbin/httpd", "-D" , "FOREGROUND"]
 EXPOSE 80 8080 22
